@@ -81,21 +81,3 @@
        [(->GeoLocation min-lat min-lon)
         (->GeoLocation max-lat max-lon)])))
 
-
-(def LAX (from-degrees 33.9415933,-118.410724))
-(def SFO (from-degrees 37.6213171,-122.3811494))
-(def JFK (from-radians 0.6696179670832446, -2.0856033047375764))
-(def JFK-2 (from-degrees 40.6413151,-73.7803331))
-(def JFK-3 (from-radians 0.7093247608354885,-1.2877097358131546))
-
-(println (distance LAX SFO))
-(println (distance SFO JFK-3))
-(println (distance LAX JFK-3))
-(println (map to-degrees  (bounds SFO 100)))
-
-(def R (* 200 EARTH-RADIUS))
-(println (distance LAX SFO R))
-
-(println (to-radians JFK-2))
-
-(pr (mapv to-degrees (bounds JFK-3 10 R)))
