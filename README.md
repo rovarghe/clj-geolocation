@@ -7,7 +7,7 @@ Clojure library to find geodesic between points (on Earth) and bounding co-ordin
 See original paper at http://janmatuschek.de/LatitudeLongitudeBoundingCoordinates
 
 ## Usage
-
+```
 (require '[rovarghe/geolocation.core :as g])
 
 (def LAX (from-degrees 33.9415933,-118.410724))
@@ -27,11 +27,11 @@ See original paper at http://janmatuschek.de/LatitudeLongitudeBoundingCoordinate
 
 (g/distance LAX SFO RADIUS-OF-JUPITER)
 >>108732.0172...
-
+```
 Bounds of square around JFK inscribing a circle with radius of 10 kms.
-
+```
 *On Earth:*
-
+```
 (mapv to-degrees (bounds JFK 10))
 >>[[40.55138293940813 -73.89885177280358] [40.73124726059187 -73.6618144271964]]
 
@@ -39,7 +39,7 @@ Bounds of square around JFK inscribing a circle with radius of 10 kms.
 
 (mapv to-degrees (bounds JFK 10 RADIUS-OF-JUPITER))
 >>[[40.64086543919704 -73.78092569318474] [40.64176476080296 -73.77974050681524]]
-
+```
 ## License
 
 Distributed under the Creative Commons Attributions License (http://creativecommons.org/licenses/by/3.0)
