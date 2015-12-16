@@ -2,6 +2,8 @@
 
 Clojure functions to find geodesic between points (on Earth) and bounding co-ordinates within a radius of given location.
 
+[![Clojars Project](http://clojars.org/clj-geolocation/latest-version.svg)](http://clojars.org/clj-geolocation)
+
 ## Acknowledgement
 
 Original paper at http://janmatuschek.de/LatitudeLongitudeBoundingCoordinates

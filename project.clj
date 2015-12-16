@@ -1,4 +1,4 @@
-(defproject clj-geolocation "0.1.0"
+(defproject clj-geolocation "0.1.1"
   :description "Find geodesic and bounding co-ordinates of a point (on Earth)"
   :url "http://github.com/rovarghe/clj-geolocation"
   :license {:name "Creative Commons Attribution License"
